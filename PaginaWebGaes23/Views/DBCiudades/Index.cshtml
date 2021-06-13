@@ -1,0 +1,44 @@
+﻿@model IEnumerable<PaginaWebGaes23.Models.DBCiudadesDROP>
+
+@{
+    ViewBag.Title = "Página Ciudades";
+    Layout = "~/Views/Shared/_LayoutAdmon.cshtml";
+}
+
+<center>
+    <h2>Administración de Ciudades</h2>
+</center>
+
+<p>
+    <a href="@Url.Action("Create", "DBCiudades")" class = "btn btn-warning">Crear Ciudad</a> 
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdCiudad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </th>
+        <th>
+            @Html.DisplayName("Acciones")
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdCiudad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descripcion)
+        </td>
+        <td>
+            @Html.ActionLink("Actualizar", "Edit", new { id=item.IdCiudad }, new { @class="btn btn-success"}) 
+            @Html.ActionLink("Consultar", "Details", new { id=item.IdCiudad }, new { @class="btn btn-info"}) 
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.IdCiudad }, new { @class="btn btn-danger"})
+        </td>
+    </tr>
+}
+
+</table>

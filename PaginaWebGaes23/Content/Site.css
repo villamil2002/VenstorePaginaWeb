@@ -1,0 +1,87 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+body {
+    background-image: url("Imagen/Carro.jpg");
+    background-repeat: no-repeat;
+    /*no-repeat; 
+        repeat-x;
+        repeat-y;
+
+        bottom center
+    */
+    background-color: white;
+    background-position: top right;
+    background-size: 400px 400px;
+    background-attachment: fixed;
+}
+
+
+h1, p {
+    font-family: 'Comic Sans MS';
+    color: yellowgreen !important;
+    font-size: 40px;
+}
+
+p.align-center {
+    font-family:'Times New Roman', Times, serif;
+    font-size:20px;
+}
+
+p[class="align-center"] {
+    text-align: right;
+}
+
+a[href] {
+    color: darkred;
+}
+
+a[href="mailto:Support@example.com"] {
+    color: yellow;
+}
+
+#Sumar {
+    color: deeppink;
+}
+
+#colores > ol > li {
+    background: red;
+    color:blue;
+    font-size: 4.5em;
+}
+
+#colores > p {
+    background: red;
+    color: blue;
+    font-size: 4.5em;
+}
+
+.align-center {
+    color:lawngreen;
+}
+
+h2 {
+    padding: 0px 10px 0px 10px;
+}

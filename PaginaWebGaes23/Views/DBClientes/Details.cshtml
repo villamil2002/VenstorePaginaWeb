@@ -1,0 +1,43 @@
+﻿@model PaginaWebGaes23.Models.DBClientesDROP
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmon.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DBClientesDROP</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdDocumento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdDocumento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombres)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Apellidos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Apellidos)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.IdDocumento }) |
+    @Html.ActionLink("Regresar al Inicio", "Index")
+</p>
